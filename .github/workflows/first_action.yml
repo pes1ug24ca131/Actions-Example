@@ -11,3 +11,9 @@ jobs:
     steps:
       - name: say-hello-again
         run: echo "Hello Again"
+
+  list-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: list-files
+        run: ls
