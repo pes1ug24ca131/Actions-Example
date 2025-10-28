@@ -1,11 +1,6 @@
 name: Greeter
 on: [push]
 jobs:
-  greetings:
-    runs-on: ubuntu@latest
-    steps:
-      - name: say-hello
-        run: echo "Helo"
   greetings-again:
     runs-on: ubuntu-latest
     steps:
@@ -15,5 +10,9 @@ jobs:
   list-files:
     runs-on: ubuntu-latest
     steps:
+      - name: Access-repo
+        uses: actions/checkout@v4
       - name: list-files
         run: ls
+
+  
